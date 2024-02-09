@@ -1,0 +1,46 @@
+Reading symbols from ./target.elf...
++b lcd.c:29
+Breakpoint 1 at 0x8000cb6: file /home/hronoz/Documents/hal_lcd_i2c/Core/Src/LCD/lcd.c, line 29.
+Note: automatically using hardware breakpoints for read-only addresses.
++r
+Starting program: /home/hronoz/Documents/hal_lcd_i2c/target.elf 
+
+Breakpoint 1, LCD_send (i2c=0x20013fc4, data=48 '0', flags=0 '\000') at /home/hronoz/Documents/hal_lcd_i2c/Core/Src/LCD/lcd.c:29
+warning: Source file is more recent than executable.
++n
+halted: PC: 0x08000cb8
+halted: PC: 0x08000cba
+halted: PC: 0x08000cbc
+halted: PC: 0x08000cbe
+halted: PC: 0x08000cc0
+halted: PC: 0x08000cc4
+halted: PC: 0x08000cc8
+halted: PC: 0x08000cca
+halted: PC: 0x08000ccc
+halted: PC: 0x08001e38
+halted: PC: 0x08000cd2
+halted: PC: 0x08000cd4
++info lo
+res = HAL_OK
+up = 48 '0'
+lo = 0 '\000'
+data_arr = "<8\f\b"
++info lo
+res = HAL_OK
+up = 48 '0'
+lo = 0 '\000'
+data_arr = "<8\f\b"
++p i2c.hi2c 
+$1 = (I2C_HandleTypeDef *) 0x200006e0 <hi2c1>
++p i2c.address 
+$2 = 78 'N'
++p /x i2c.address 
+$3 = 0x4e
++p /b i2c.address 
+Size letters are meaningless in "print" command.
++p /i i2c.address 
+Format letter "i" is meaningless in "print" command.
++p /t i2c.address 
+$4 = 1001110
++p /t i2c.hi2c 
+$5 = 100000000000000000011011100000

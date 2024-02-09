@@ -1,0 +1,4 @@
+/home/hronoz/Documents/hal_lcd_i2c/CMakeFiles/target.elf.dir
+/home/hronoz/Documents/hal_lcd_i2c/CMakeFiles/flash.dir
+/home/hronoz/Documents/hal_lcd_i2c/CMakeFiles/edit_cache.dir
+/home/hronoz/Documents/hal_lcd_i2c/CMakeFiles/rebuild_cache.dir
